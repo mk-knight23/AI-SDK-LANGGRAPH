@@ -1,41 +1,85 @@
 # AI-SDK-LANGGRAPH
 
 [![AI-SDK Ecosystem](https://img.shields.io/badge/AI--SDK-ECOSYSTEM-part%20of-blue)](https://github.com/mk-knight23/AI-SDK-ECOSYSTEM)
+[![LangGraph](https://img.shields.io/badge/LangGraph-0.2-red)](https://github.com/langchain-ai/langgraph)
+[![SvelteKit](https://img.shields.io/badge/SvelteKit-2.0-orange)](https://kit.svelte.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-green)](https://nodejs.org/)
 
-> **Framework**: LangGraph
+> **Framework**: LangGraph (Stateful Agent Workflows)
+> **Stack**: SvelteKit 2 + Node.js
 
-Production-ready LangGraph SDK implementation with modern web stack.
+---
 
-## Tech Stack
+## 🎯 Project Overview
 
-- **Frontend**: SvelteKit 2
-- **Backend**: Node.js
-- **AI SDK**: LangGraph
+**AI-SDK-LANGGRAPH** showcases stateful agent workflows using LangGraph. It demonstrates cyclic graph topology, persistent state management, checkpointing, and human-in-the-loop approval patterns for building production AI agent systems.
 
-## Quick Start
+### Key Features
+
+- 🕸️ **Cyclic Graph Workflows** - Non-linear agent conversation flows
+- 💾 **State Persistence** - Long-term memory across sessions
+- 🔄 **Checkpointing System** - Save and restore agent state
+- 🤖 **Multi-Agent Systems** - Multiple agents coordinating via LangGraph
+- 📡 **Real-time Updates** - WebSocket streaming of agent execution
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|-------------|---------|
+| SvelteKit 2 | Full-stack framework |
+| Node.js 20 | Runtime |
+| LangGraph | Agent orchestration |
+| WebSocket | Real-time communication |
+| Skeleton UI | Loading states |
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-# Install and run
 npm install
 npm run dev
 ```
 
-## Features
+---
 
-- LangGraph stateful agent workflows
-- RESTful API endpoints
-- Docker containerization
-- CI/CD pipeline
-- Test coverage configured
+## 🔌 API Integrations
 
-## Deployment
+| Provider | Usage |
+|----------|-------|
+| OpenAI | Primary LLM |
+| Anthropic | Fallback LLM |
 
-See DEPLOYMENT.md for deployment instructions.
+---
 
-## License
+## 📦 Deployment
 
-MIT License - see LICENSE for details.
+**Fly.io**
 
-## Part of AI-SDK Ecosystem
+```bash
+fly deploy
+```
 
-This repository is part of the [AI-SDK Ecosystem](https://github.com/mk-knight23/AI-SDK-ECOSYSTEM).
+---
+
+## 📁 Project Structure
+
+```
+AI-SDK-LANGGRAPH/
+├── src/              # SvelteKit source
+│   ├── routes/      # API routes + agent endpoints
+│   └── lib/         # LangGraph graphs
+└── README.md
+```
+
+---
+
+## 📝 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+**Part of the [AI-SDK Ecosystem](https://github.com/mk-knight23/AI-SDK-ECOSYSTEM)**
