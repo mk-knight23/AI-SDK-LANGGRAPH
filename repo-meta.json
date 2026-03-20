@@ -1,0 +1,13 @@
+{
+  "name": "AI-SDK-LANGGRAPH",
+  "title": "LangGraph State Engine",
+  "description": "Durable state-machine agents for long-running mission flows",
+  "topics": [
+    "langgraph",
+    "stateful-agents",
+    "durable-execution",
+    "python",
+    "workflow"
+  ],
+  "homepage": "https://mk-knight23.github.io/AI-SDK-LANGGRAPH"
+}
