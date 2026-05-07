@@ -1,24 +1,25 @@
-# Project Brain: langgraph
+# Project Brain: AI-SDK-LANGGRAPH
 
 ## Purpose
-Implement Kazi's Agents Army mission routing on the langgraph framework.
 
-## Core Mechanism
-- Receive mission text.
-- Route to primary + support agents via shared core router.
-- Convert routed mission into framework-native execution primitives.
+Durable state-machine agents for long-running mission flows.
 
 ## Current State
-- Adapter skeleton implemented with optional imports.
-- Demo mission execution path available via `python runner.py`.
 
-## Production Plan
-- Configure provider keys via environment variables.
-- Add persistent memory/checkpoint backends where available.
-- Add eval, tracing, and latency/cost dashboards.
-- Add CI tests and deployment workflows.
+- Typed GraphState contract for mission execution.
+- Route, planning, and verification graph nodes.
+- FastAPI service and CLI runner.
+- Shared skill registry and mission plan rendering.
+- Docker, CI, pytest contract tests, and deployment-ready metadata.
 
-## Risks
-- Framework API drift across versions.
-- Inference cost growth under multi-agent fan-out.
-- Tool execution needs policy and approval guardrails.
+## Upgrade Direction
+
+- Add checkpoints for durable runs.
+- Add human approval gates for risky tools.
+- Create graph benchmarks for latency, recovery, and correctness.
+
+## Quality Bar
+
+- Keep the repository runnable from a fresh clone.
+- Keep generated caches and local secrets out of git.
+- Keep README, skill matrix, tests, and CI aligned with actual behavior.
